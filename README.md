@@ -14,8 +14,10 @@ You may also use breakpoints, just like normal when using the generated Xcode pr
 
 ## Generating Business Example Project
 
+`cd` any directory with example.yml, run `make project`.
+
 ```shell
-cd App/
+cd App/TAGoodsDetail
 make project
 ```
 
@@ -25,7 +27,7 @@ make project
 # generating and opening a Xcode project
 make project
 
-# building with Buck CLI
+# Delete project and killall Xcode
 make clean
 ```
 
