@@ -1,4 +1,4 @@
-# Monorepo Project
+# MonorepoSample
 
 This repo shows how we builds Monorepo iOS applications using XcodeGen. We hope you find it as useful as we do.
 
