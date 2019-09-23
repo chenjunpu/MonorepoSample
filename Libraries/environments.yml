@@ -1,0 +1,18 @@
+configs:
+  Debug: debug
+  PreRelease: debug
+  Release: release
+
+options:
+  createIntermediateGroups: true
+  groupSortPosition: none
+  bundleIdPrefix: "com.JunpuChen"
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  deploymentTarget:
+    iOS: 11.0
+
+attributes:
+  ORGANIZATIONNAME: JunpuChen
+  ProvisioningStyle: Automatic

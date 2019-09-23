@@ -1,0 +1,26 @@
+name: Example
+
+include:
+  - ../../Libraries/environments.yml
+  - ../../Libraries/BusinessCategory/business_category.yml
+  - ../../Pods/pods.yml
+
+fileGroups:
+  - example.yml
+
+targets:
+  Example:
+    type: application
+    platform: iOS
+    sources:
+      - ../../Libraries/ExampleSupportFiles
+      - ../Resources
+      - Classes
+      - Example
+    settings:
+      INFOPLIST_FILE: ../../Libraries/ExampleSupportFiles/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: com.JunpuChen.MonoProject
+    dependencies:
+      - target: Masonry
+      - target: CTMediator
+      - target: TAConfirmOrderBusinessCategory

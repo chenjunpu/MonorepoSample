@@ -1,0 +1,42 @@
+name: MonoProject
+
+include:
+  - ../Libraries/environments.yml
+  - ../Libraries/BusinessCategory/business_category.yml
+  - ../Pods/pods.yml
+
+fileGroups:
+  - project.yml
+
+targets:
+  MonoProject:
+    type: application
+    platform: iOS
+    sources:
+      - Resources
+      - Main
+    settings:
+      INFOPLIST_FILE: Main/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: com.JunpuChen.MonoProject
+    dependencies:
+      # third-party libraries
+      - target: Masonry
+      - target: CTMediator
+
+      # This is all of our first-party libraries that are depended upon (directly or transitively) by this application.
+      - target: TAGoodsDetail
+      - target: TAGoodsDetailBusinessCategory
+      - target: TAConfirmOrder
+      - target: TAConfirmOrderBusinessCategory
+
+  TAGoodsDetail:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: TAGoodsDetail/Classes
+
+  TAConfirmOrder:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: TAConfirmOrder/Classes

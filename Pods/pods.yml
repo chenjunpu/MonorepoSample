@@ -1,0 +1,13 @@
+targets:
+  
+  Masonry:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: Masonry/Masonry
+
+  CTMediator:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: CTMediator/CTMediator/CTMediator

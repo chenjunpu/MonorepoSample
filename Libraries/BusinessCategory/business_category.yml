@@ -1,0 +1,13 @@
+targets:
+  
+  TAGoodsDetailBusinessCategory:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: TAGoodsDetailBusinessCategory
+
+  TAConfirmOrderBusinessCategory:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: TAConfirmOrderBusinessCategory
