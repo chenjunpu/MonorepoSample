@@ -3,7 +3,8 @@ name: Example
 include:
   - ../../Libraries/environments.yml
   - ../../Libraries/BusinessCategory/business_category.yml
-  - ../../Pods/pods.yml
+  - ../../Pods/Masonry.yml
+  - ../../Pods/CTMediator.yml
 
 fileGroups:
   - example.yml

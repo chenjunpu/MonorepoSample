@@ -2,7 +2,7 @@ name: Example
 
 include:
   - ../../Libraries/environments.yml
-  - ../../Pods/pods.yml
+  - ../../Pods/Masonry.yml
 
 fileGroups:
   - example.yml

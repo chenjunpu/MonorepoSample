@@ -1,0 +1,6 @@
+targets:
+  Masonry:
+    type: library.static
+    platform: iOS
+    sources:
+      - path: Masonry/Masonry

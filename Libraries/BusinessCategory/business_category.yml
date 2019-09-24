@@ -1,3 +1,6 @@
+include:
+  - ../../Pods/CTMediator.yml
+
 targets:
   
   TAGoodsDetailBusinessCategory:
@@ -5,9 +8,13 @@ targets:
     platform: iOS
     sources:
       - path: TAGoodsDetailBusinessCategory
+    dependencies:
+      - target: CTMediator
 
   TAConfirmOrderBusinessCategory:
     type: library.static
     platform: iOS
     sources:
       - path: TAConfirmOrderBusinessCategory
+    dependencies:
+      - target: CTMediator

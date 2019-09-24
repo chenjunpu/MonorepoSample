@@ -3,7 +3,8 @@ name: MonoProject
 include:
   - ../Libraries/environments.yml
   - ../Libraries/BusinessCategory/business_category.yml
-  - ../Pods/pods.yml
+  - ../Pods/CTMediator.yml
+  - ../Pods/Masonry.yml
 
 fileGroups:
   - project.yml
